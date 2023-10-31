@@ -1,0 +1,127 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,twoside,slovak,a4paper]{article}
+
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+
+\usepackage{cite}
+%\usepackage{times}
+
+\pagestyle{headings}
+
+\title{Sémantické vyhľadávanie\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2023/24, vedenie: Vladimír Mlynarovič}} % meno a priezvisko vyučujúceho na cvičeniach
+
+\author{Nikol Maljarová\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{xmaljarova@stuba.sk}}
+	}
+
+\date{\small 31.10.2023} % upravte
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Sémantické vyhľadávanie je druh vyhľadávania, pri ktorom nezáleží len na slovách hľadaných užívateľom, ale aj na vzťahoch medzi slovami a ich mnohými významami v rámci určitého kontextu. Tento proces je inšpirovaný prirodzenou ľudskou rečou. Cieľom článku je oboznámiť čitateľa so základnými mechanizmami sémantického vyhľadávania ako napríklad latentná sémantická analýza alebo latentná Dirichletova alokácia. Vysvetlené sú aj základné pojmy ako ontológia či značkovanie. Článok porovnáva rôzne typy sémantického vyhľadávania podľa ich cieľa, vykresľuje základnú štruktúru vyhľadávania a jej časti. Nedostatky v definíciách ontológií či sémantického popisu bežných webových stránok a mnohé ďalšie problémy sú opísané v poslednej časti článku. Napriek spomínaným nedostatkom táto oblasť vyhľadávania sprostredkúva informácie efektívnejšie ako tradičné lexikálne vyhľadávanie a poskytuje veľký priestor pre rozvoj v budúcnosti. 
+\ldots
+\end{abstract}
+
+
+
+\section{Úvod}
+V článku sa venujem problematike sémantického vyhľadávania. Oproti tradičným spôsobom vyhľadávania zaužívaným na väčšine vyhľadávacích nástrojoch a weboch poskytuje sémantické vyhľadávanie efektívnejší prístup ku informáciám.
+ Takéto vyhľadávanie sa snaží pochopiť našu reči a vytvoriť určitý významový súvis medzi slovami. Nevyhľadáva v dokumentoch počet jednotlivých slov uvedených v užívateľovom vstupe. Naopak, snaží sa im porozumieť a nájsť najrelevantnejšie výsledky na základe zaužívaných slovných asociácií a mnohovýznamovosti slov v rámci konkrétneho kontextu. 
+
+
+
+\section{Základné princípy sémantického vyhľadávania} \label{nejaka}
+
+Z obr.~\ref{f:rozhod} je všetko jasné. 
+
+\begin{figure*}[tbh]
+\centering
+%\includegraphics[scale=1.0]{diagram.pdf}
+Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
+\caption{Rozhodujúci argument.}
+\label{f:rozhod}
+\end{figure*}
+
+
+
+\subsection{Latentná semantická analýza} \label{ina}
+
+Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+
+Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+
+
+\subsection{Latentná Dirichletova alokácia} \label{ina:nejake}
+
+Niekedy treba uviesť zoznam:
+
+\begin{itemize}
+\item jedna vec
+\item druhá vec
+	\begin{itemize}
+	\item x
+	\item y
+	\end{itemize}
+\end{itemize}
+
+Ten istý zoznam, len číslovaný:
+
+\begin{enumerate}
+\item jedna vec
+\item druhá vec
+	\begin{enumerate}
+	\item x
+	\item y
+	\end{enumerate}
+\end{enumerate}
+
+
+
+\paragraph{Veľmi dôležitá poznámka.}
+Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+
+\section{Proces vyhľadávania} \label{nejaka}
+
+
+
+
+\section{Ontológia} \label{dolezita}
+
+
+
+
+\section{Typy sémantického vyhľadávania} \label{dolezitejsia}
+
+
+
+
+\section{Problémy} \label{nejaka}
+
+
+
+
+\section{Záver} \label{zaver} % prípadne iný variant názvu
+
+
+
+%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+\bibliography{literatura}
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\end{document}
